@@ -1,0 +1,64 @@
+:root {
+    --dark: #3e4e50;
+    --light: #d1c6ad;
+    --link: rgb(15, 192, 18);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+    background-color: var(--dark);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 200%;
+    margin: 0%;
+}
+
+h1::after {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    content: "Portfolio";
+    color: var(--dark);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+  
+header nav ul li a {
+    color: var(--light);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} 
+header nav ul li a:hover {
+    background: var(--light);
+    color: var(--dark);
+    border-radius: 15px;
+    text-shadow: none;
+    padding: 10px;
+}
+
+#box {
+    background-color: var(--light) ;
+    padding: 10px;
+}
